@@ -1,2 +1,6 @@
 # sistem-solar
-Este proyecto sencillo busca crear una de las bases de las 
+Pagina wed programado en Django 
+
+![image](https://github.com/vxeque/sistem-solar/assets/138147636/bed0d6a6-7a4e-4390-8fee-9ae9ce6a5f96)
+
+
