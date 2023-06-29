@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/style/index.css' %}" />
+
+<script>
+    window.addEventListener('scroll', function() {
+        var windowHeight = window.innerHeight;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        var imageContainer = document.getElementById('image-container');
+        var images = imageContainer.getElementsByTagName('img');
+
+        for (var i = 0; i < images.length; i++) {
+            var image = images[i];
+            var imageTop = image.getBoundingClientRect().top + scrollTop;
+
+            if (imageTop < (scrollTop + windowHeight)) {
+                image.style.opacity = '1'; 
+                image.style.maxWidth = '100%'; 
+                image.style.maxHeight = '100%'; 
+            }
+        }
+    });
+</script>
+
+<div id="image-container">
+    <img src="{% static '/style/img/fondoCohete.jpg' %}" alt="Imagen 1">
+    <!-- <img src="{% static '/style/img/fondoCohete.jpg' %}" alt="Imagen 2">
+    <img src="{% static '/style/img/fondoCohete.jpg' %}" alt="Imagen 3"> -->
+    <!-- Agrega más imágenes según sea necesario -->
+</div>
+
+<div class="link">
+    <h1><a href="{% url 'solarSistem' %}">Iniciar</a></h1>
+</div>
+{% endblock %}
+

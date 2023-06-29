@@ -1,0 +1,78 @@
+#contenido {
+  width: 69%;
+  /* float: left; */
+  display: inline-block;
+}
+
+.encabezado-luna {
+  background: black;
+  margin: 0;
+  text-align: center;
+  margin-top: -5px;
+  padding: 10px;
+}
+
+.fondo-mercurio {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.container .foto-adaptable {
+  position: absolute;
+  top: -140px;
+  margin: 0;
+  transform: translate(0%, -50%);
+}
+
+.encabezado-luna-jupiter {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+}
+
+.titulos {
+  padding-left: 2%;
+  border-radius: 10px;
+  background-color: rgba(100, 148, 237, 0.411);
+}
+
+.aside{
+  float: right;
+  width: 30%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.aside {
+  text-align: center;
+}
+
+.table-data{
+  text-align: left;
+  background-color: rgba(186, 187, 187, 0.123);
+  width: 100%;
+}
+
+.colum-one{
+  /* border-right: 1px solid white; */
+  background-color: rgba(250, 250, 250, 0.308);
+}
+
+.encabezado{
+  text-align: center;
+}
+
+.colum-header{
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.308);
+}
+
+.encabezado-tabla{
+  padding: 5%;
+  font-family: 'Lucida Sans';
+}

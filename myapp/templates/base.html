@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static '/style/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static '/style/principal.css' %}">
+    <title>Space</title>
+
+</head>
+<body  class="img-fondo">          
+    <nav class="navbar">
+        <img class="imagen-colorizada" src="{% static '/style/img/logo.png' %}" alt="">
+        <ul>
+            <li><a href="{% url 'index' %}">Start</a></li>
+            <li><a href="{% url 'solarSistem' %}">Solar sistem</a></li>
+            <li><a href="{% url 'planets' %}">Mercury</a></li>
+            <li><a href="{% url 'moons' %}">Moon Europa</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main> 
+    
+    <form method="POST">
+        {% csrf_token %}
+    </form>
+
+    <footer class="foot">
+        Derechos de autor © 2023 Victor Xeque. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

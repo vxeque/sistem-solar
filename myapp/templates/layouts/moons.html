@@ -1,0 +1,221 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static 'style/forms.css' %}" />
+<link rel="stylesheet" href="{% static '/style/moons.css' %}" />
+
+<h1 class="encabezado-luna">Luna Europa</h1>
+<div class="fondo-mercurio">
+  <img
+    class="foto-adaptable"
+    src="{% static '/style/img/jupiter.jpg'%}"
+    alt=""
+  />
+  <div class="encabezado-luna-jupiter">
+    <h1 class="encabezado">Lunas de jupiter</h1>
+  </div>
+</div>
+
+<div id="contenido">
+  <h1 class="titulos">Luna Europa de jupiter</h1>
+  <p class="parrafo">
+    Europa es el sexto satélite natural de Júpiter en orden creciente de
+    distancia y el más pequeño de los cuatro satélites galileanos. Fue
+    descubierto en 1610 por Galileo y nombrado por Europa, la madre del rey
+    Minos de Creta y amante de Zeus. Simon Marius sugirió el nombre tras su
+    descubrimiento, pero este nombre, así como el nombre de los otros satélites
+    galileanos, no fue de uso común hasta mediados del siglo XX. En gran parte
+    de la literatura astronómica temprana aparece mencionado por su designación
+    numeral romana, Júpiter II, o como el segundo satélite de Júpiter. Además de
+    haber sido observado mediante telescopios terrestres, varias sondas
+    espaciales (las primeras a principios de los años 1970) lo han examinado de
+    cerca. Es el sexto satélite más grande del sistema solar.
+  </p>
+
+  <p class="parrafo">
+    Ligeramente más pequeño que la Luna, Europa está compuesto principalmente
+    por silicatos, tiene una corteza de hielo de agua y un probable núcleo de
+    hierro y níquel. Cuenta con una tenue atmósfera compuesta de oxígeno, entre
+    otros gases. Su superficie está estriada por grietas y rayas, mientras que
+    los cráteres son relativamente raros. Tiene la superficie más lisa de
+    cualquier objeto conocido del sistema solar. Esta aparente juventud y
+    suavidad ha dado lugar a la hipótesis de que existe un océano debajo de la
+    superficie, el cual podría servir de morada para la vida. Esta hipótesis
+    propone que el calor de las fuerzas de marea causa que el océano se mantenga
+    líquido y conduzca la actividad geológica igual que lo harían las placas
+    tectónicas. El 8 de septiembre de 2014 la NASA informó de que había
+    encontrado pruebas que apoyaban indicios tempranos de placas tectónicas en
+    la gruesa cubierta helada de Europa, la primera señal de tal actividad
+    geológica en otro mundo distinto de la Tierra. El 12 de mayo de 2015, varios
+    científicos anunciaron que la sal marina del océano subsuperficial podía
+    estar cubriendo algunas características geológicas de Europa, lo que sugiere
+    que el océano está interactuando con el fondo del mar. Esto puede ser
+    importante para determinar si el satélite podría ser apto para la vida.
+  </p>
+
+  <h1 class="titulos">Historia</h1>
+  <p>
+    Europa fue descubierta por Galileo el 7 de enero de 1610, fecha en que halló
+    junto a Júpiter «tres estrellas fijas, totalmente invisibles por su pequeño
+    tamaño», según anotó en su diario. A la noche siguiente descubrió una cuarta
+    estrella, y en noches posteriores comprobó que orbitaban en torno al
+    planeta, por lo que dedujo que eran satélites. Se trataba de Ío, Europa,
+    Ganímedes y Calisto. Galileo llamó inicialmente a estas lunas «astros
+    mediceos», en honor a su mecenas, Cosme II de Médicis, pero la propuesta no
+    gustó a otros astrónomos, que buscaron alternativas; así, el alemán Simon
+    Marius, quien aseguraba haber descubierto también las lunas incluso antes
+    que Galileo, propuso nombres basados en la mitología griega, que son los
+    conocidos hoy día. Galileo contraatacó proponiendo que se llamasen Júpiter
+    I, II, III y IV, nombres que fueron usados hasta principios del xx, en que
+    se recuperaron los nombres propuestos por Marius. Las cuatro lunas de
+    Júpiter son también conocidas como «satélites galileanos».
+  </p>
+
+  <h1 class="titulos">Órbita y rotación</h1>
+  <p>
+    Europa orbita Júpiter en poco más de tres días y medio, con un radio orbital
+    de unos 670 900 kilómetros. Su excentricidad (ε) es de solo 0,009, por lo
+    que su órbita es casi circular, y la inclinación orbital con respecto al
+    plano ecuatorial de Júpiter es pequeña, de 0,470°. Al igual que sus
+    compañeros galileanos, Europa está anclado por marea a Júpiter, con un
+    hemisferio mirando constantemente hacia Júpiter. La ligera excentricidad de
+    la órbita de Europa, mantenida por las perturbaciones gravitacionales de los
+    demás satélites galileanos, hace que Europa sufra contracciones y
+    distensiones a lo largo de su órbita. Cuando Europa se acerca un poco a
+    Júpiter, la atracción gravitacional de Júpiter aumenta, haciendo que Europa
+    se alargue hacia este. A medida que Europa se aleja un poco de Júpiter, la
+    fuerza gravitacional disminuye, causando que Europa vuelva de nuevo a una
+    forma más esférica, creando las mareas en su océano. La excentricidad
+    orbital de Europa se ve impulsada continuamente por su resonancia orbital
+    con Io. Por lo tanto, la flexión de marea amasa el interior de Europa y le
+    da una fuente de calor, permitiendo, posiblemente, a su océano permanecer
+    líquido. La última fuente de esta energía es la rotación de Júpiter, la cual
+    es drenada por Ío a través de las mareas que se plantean en Júpiter y se
+    transfiere a Europa y Ganímedes por la resonancia orbital.
+  </p>
+</div>
+
+<aside class="aside">
+  <table class="table-data">
+    <thead class="encabezado">
+      <tr>
+        <th class="encabezado-tabla" colspan="2">Luna Europa</th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <img src="{% static '/style/img/Europa-moon.jpg' %}" alt="">
+        </th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <th class="colum-one">
+          Descubridor
+        </th>
+        <th>
+          Galileo Galilei,
+          Simon Marius
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">
+          Fecha
+        </th>
+        <th>
+          7 de enero de 1610
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">
+          Categoría
+        </th>
+        <th>
+          Satélite galileano
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">
+          Orbita a
+        </th>
+        <th>
+          júpiter
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-header" colspan="2">
+          Características físicas
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">
+          Masa
+        </th>
+        <th>
+          4,80 x 1022 kg (0.008 veces la Tierra)
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">Volumen</th>
+        <th>1,593 x 1010 km³</th>
+      </tr>
+      <tr>
+        <th class="colum-one">
+          Densidad
+        </th>
+        <th>
+          3,013 x g/cm³
+        </th>
+      </tr>
+      <tr>
+        <th class="colum-one">Área de superficie</th>
+        <th>3,09 x 107 km²</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Radio</th>
+        <th>1 560.8 kilómetros</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Diámetro</th>
+        <th>3121,6 km³</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Gravedad</th>
+        <th>1,314 m/s² (0,134g)</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Velocidad de escape</th>
+        <th>2,025 km/s</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Periodo de rotación</th>
+        <th>Rotación síncrona</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Inclinación axial</th>
+        <th>0,1°</th>
+      </tr>
+      <tr>
+        <th class="colum-header" colspan="2">Características atmosféricas</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Presión</th>
+        <th>0.1 µPa</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Temperatura</th>
+        <th>50-125 K</th>
+      </tr>
+      <tr>
+        <th class="colum-header" colspan="2">Cuerpo celeste</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Anterior</th>
+        <th>Ío</th>
+      </tr>
+      <tr>
+        <th class="colum-one">Siguiente</th>
+        <th>Ganímedes</th>
+      </tr>
+    </tbody>
+  </table>
+</aside>
+{% endblock %}

@@ -1,0 +1,17 @@
+
+.link {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link h1 a {
+    color: white;
+    padding: 10%;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgba(53, 53, 53, 0.438);
+}
+

@@ -1,0 +1,171 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<link rel="stylesheet" href="{% static '/style/planets.css' %}" />
+<link rel="stylesheet" href="{% static 'style/forms.css' %}" />
+
+<h1 class="encabezado-planeta">Planetas</h1>
+
+<div class="fondo-mercurio">
+  <img
+    class="foto-adaptable"
+    src="{% static '/style/img/mercury-fondo.jpg'%}"
+    alt=""
+  />
+  <div class="encabezado-mercurio">
+    <h1 class="encabezado">Mercurio</h1>
+  </div>
+</div>
+
+<div class="contenedor">
+  <h1 class="titulos">Mercurio Formación</h1>
+  <p>
+    El planeta más pequeño de nuestro sistema solar y más cercano al Sol,
+    Mercurio es solo un poco más grande que la Luna de la Tierra.
+  </p>
+
+  <p>
+    Se teoriza que Mercurio se formó hace unos 4.500 millones de años cuando la
+    gravedad reunió gas giratorio y polvo para formar el pequeño planeta. Su
+    pequeño tamaño pero enorme núcleo se teoriza como resultado de una colisión
+    con otro objeto gigante que despojó gran parte de su superficie.
+  </p>
+
+  <h1 class="titulos">Distancia, tamaño y masa</h1>
+  <p>
+    Mercurio es el planeta más cercano al Sol, a una distancia de 57.91 millones
+    de kilómetros / 35.98 millas o 0.4 UA de distancia. La luz solar tarda 3,2
+    minutos en viajar del Sol a Mercurio.
+  </p>
+  <p>
+    Mercurio tiene un radio de 2.439 km o 1516 millas, y un diámetro de 4.879 km
+    o 3.032 millas. Es aproximadamente del tamaño de los Estados Unidos
+    continentales, un poco más grande. Tiene una masa de aproximadamente
+    3.285x10^23 kg o aproximadamente 5.5% de la de Tierra.
+  </p>
+  <p>
+    A pesar de ser el planeta más pequeño del Sistema Solar, es el segundo
+    planeta más denso del Sistema solar, con una densidad de 5,43g/cm³ después
+    de la Tierra. A modo de comparación, el tamaño de Mercurio es
+    aproximadamente un tercio de la Tierra, y la Tierra tiene una densidad de
+    5.51 g/cm³.
+  </p>
+
+  <h1 class="titulos">Órbita y rotación</h1>
+
+  <p>
+    La órbita altamente excéntrica en forma de huevo de Mercurio lleva al
+    planeta tan cerca como 29 millones de millas o 47 millones de kilómetros, y
+    hasta 43 millones de millas o 70 millones de kilómetros del Sol. Hace un
+    viaje alrededor del Sol cada 88 días, por lo que 1 órbita / año es el
+    equivalente a 88 días terrestres. Mercurio viaja a través del espacio a casi
+    29 millas o 47 kilómetros por segundo, más rápido que cualquier otro
+    planeta.
+  </p>
+
+  <h1 class="titulos">Superficie y geologia</h1>
+  <p>
+    Muy similar en apariencia a la luna de la Tierra, la superficie de Mercurio
+    está marcada por muchos cráteres de impacto de cometas o meteoritos.
+    Curiosamente, muchos de estos cráteres llevan el nombre de famosos artistas
+    y autores fallecidos. También hay extensas llanuras parecidas a la yegua y
+    los cráteres también indican que el planeta ha estado geológicamente
+    inactivo durante miles de millones de años.
+  </p>
+
+  <p>
+    Se cree que Mercurio fue bombardeado por cometas y asteroides durante y poco
+    después de su formación hace 4.600 millones de años, así como durante un
+    evento posterior posiblemente separado llamado Bombardeo Pesado Tardío que
+    terminó hace 3.800 millones de años.
+  </p>
+
+  <p>
+    Durante este bombardeo, toda la superficie de Mercurio sufrió aún más debido
+    a su falta de atmósfera que habría frenado los impactos. Se cree que
+    Mercurio fue volcánicamente activo durante este período.
+  </p>
+
+  <p>
+    Las cuencas como la Cuenca Caloris se llenaron de magma, produciendo
+    llanuras lisas similares a las marias lunares encontradas en la Luna.
+  </p>
+
+  <p>
+    El cráter más grande conocido es Caloris Basin, con un diámetro de 1,550 km
+    o 963 millas. Se han identificado alrededor de 15 cuencas de impacto en
+    Mercurio, y se revelarán más.
+  </p>
+</div>
+
+<aside class="aside">
+  <table class="tabla-mercurio">
+    <thead>
+      <tr>
+        <th colspan="2">
+          <img
+            id="imagen-mercurio"
+            src="{% static '/style/img/mercurio.png' %}"
+            alt=""
+          />
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th colspan="2">Datos rápidos</th>
+      </tr>
+      <tr>
+        <th>Temperatura de la superficie</th>
+        <th>-173 a 427°C</th>
+      </tr>
+      <tr>
+        <th>Período de órbita</th>
+        <th>87.97 días terrestres</th>
+      </tr>
+      <tr>
+        <th>Distancia de órbita</th>
+        <th>57,909,227km (0,39 UA)</th>
+      </tr>
+      <tr>
+        <th>Circunferencia ecuatorial</th>
+        <th>15.329km</th>
+      </tr>
+      <tr>
+        <th>Diámetro polar</th>
+        <th>4.879 km</th>
+      </tr>
+      <tr>
+        <th>Masa</th>
+        <th>330,104,000,000,000 billones de kg (0.055xTierra)</th>
+      </tr>
+    </tbody>
+  </table>
+</aside>
+
+
+<form class="forms-class" method="POST">
+  {% csrf_token %} 
+  {{forms.as_p}}
+  <button class="boton-Guardar">Enviar</button>
+</form>
+
+<div class="div-preguntas">
+  {% if respuesta %}
+    <img class="img-mercurio" src="{% static '/style/img/mercurio.png' %}" alt="">
+    <div class="mercurio-div" ><a href="https://solarsystem.nasa.gov/planets/mercury/overview/">Mercurio</a></div>
+    
+    <h1 class="encabezado-respuesta">Respuesta del cuestionario</h1>
+    {% for answer in respuesta.values %}
+      {% if answer == True %}
+        <p class="answerCorrect">Pregunta {{ forloop.counter }}: Correcto ✅ </p>
+      {% else %} 
+        <p class="answerIncorrect">Pregunta {{ forloop.counter }}: Incorrecto ❌</p>
+      {% endif %}
+     {% endfor %}
+  {% else %}
+    <h1 class="encabezado-responder-cuestionario">Contesta el cuestionario para ver tu aprendizaje</h1>
+  {% endif %}
+</div>
+
+{% endblock %}

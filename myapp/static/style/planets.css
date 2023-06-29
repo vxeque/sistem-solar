@@ -1,0 +1,136 @@
+.encabezado-planeta {
+  background: black;
+  margin: 0;
+  text-align: center;
+  margin-top: -5px;
+  padding: 10px;
+}
+
+.fondo-mercurio {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.container .foto-adaptable {
+  position: absolute;
+  top: -150px;
+  margin: 0;
+  transform: translate(-10%, -40%);
+}
+
+.encabezado-mercurio {
+  position: absolute;
+  left: 320px;
+  top: 150px;
+}
+
+.contenedor {
+  padding-left: 1%;
+  display: inline-block;
+  width: 60%;
+  margin: 0;
+}
+
+.aside {
+  margin: 0;
+  margin-top: 2%;
+  width: 35%;
+  float: right;
+  text-align: center;
+}
+
+#imagen-mercurio {
+  width: 30%;
+}
+
+.titulos{
+  padding-left: 2%;
+  border-radius: 10px;
+  background-color: rgba(100, 148, 237, 0.411);
+}
+
+.tabla-mercurio{
+  text-align: center;
+}
+
+tr, th{
+  background-color: rgba(100, 148, 237, 0.411);
+  border:1px solid white;
+  border-radius: 5px;
+}
+
+.forms-class{
+  width: 700px;
+}
+
+/* ffff */
+.div-preguntas {
+  background: #6868e0;
+  border-radius: 10px;
+}
+
+.answerCorrect{
+  background: #90daa3b6;
+  width: 170px;
+  padding: 5px;
+  border-radius: 7px;
+  color: black;
+  margin-left: 10px;
+  border-bottom: 10px;
+}
+
+.answerIncorrect {
+  background: #e77e7ede;
+  width: 170px;
+  padding: 5px;
+  border-radius: 7px;
+  margin-left: 10px;
+
+}
+
+.encabezado-respuesta {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.img-mercurio{
+  float: right;
+  width: 400px;
+  margin-top: -100px;
+  position: relative;
+}
+
+.mercurio-div{
+  background: #acacc7;
+  padding: 7px 10px;
+  border-radius: 10px;
+  position: relative;
+  /* bottom: -240px; */
+  /* left: 300px; */
+  top: 10px;
+  float: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mercurio-div:hover{
+  transform: scale(1.2);
+}
+
+.mercurio-div a{
+  color: #202020;
+  text-decoration: none;
+  font-family: fantasy ;
+}
+
+.boton-Guardar {
+  background: #6868e0;
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
